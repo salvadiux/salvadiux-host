@@ -20,6 +20,12 @@ Salvadiux Host es un panel local para crear y gestionar instancias de Minecraft.
 
 </div>
 
+<p align="center">
+  <img src="apps/dashboard/public/assets/salvadiux-icon.png" alt="Ilustración anime de Salvadiux Host con un bloque de Minecraft" width="220">
+</p>
+
+> ⚠️ **Proyecto en desarrollo:** puede contener errores, funciones incompletas o comportamientos que todavía necesitan pruebas. Haz copias de seguridad y pruébalo en un entorno local antes de usarlo con datos importantes.
+
 ---
 
 ## ✨ Qué puedes hacer
@@ -131,6 +137,10 @@ En Windows también puedes usar `COMPILAR_NETWORK_CORE.bat`. El JAR resultante s
 ## 🫶 Código abierto y contribuciones
 
 El proyecto usa la licencia MIT: cualquiera puede revisar el código, hacer un fork y proponer mejoras mediante Pull Requests. Las propuestas y errores tienen plantillas para que sean más fáciles de reproducir y revisar. Las contribuciones no se incorporan automáticamente: el equipo del proyecto las revisa antes de integrarlas. Consulta [CONTRIBUTING.md](CONTRIBUTING.md) para participar.
+
+Salvadiux Host es un proyecto personal. Todavía estoy aprendiendo los lenguajes y herramientas que utiliza, y me apoyé en inteligencia artificial para desarrollarlo y entender partes del código. Por eso puede haber errores o decisiones que se puedan mejorar; agradezco la paciencia, las revisiones y las contribuciones respetuosas.
+
+Si encuentras un problema, escríbeme a **[salvadiux2@gmail.com](mailto:salvadiux2@gmail.com)** o [abre un reporte](https://github.com/salvadiux/salvadiux-host/issues/new/choose). Incluye los pasos para reproducirlo y lo que esperabas que ocurriera. Antes de compartir registros, elimina contraseñas, tokens, webhooks y otros datos privados.
 
 ## 🔐 Antes de publicar o exponer el panel
 
