@@ -1,0 +1,25 @@
+{
+  "name": "salvadiux-host",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.17.1",
+  "scripts": {
+    "predev": "pnpm build",
+    "dev": "concurrently -n agent,api,dashboard -c magenta,cyan,blue \"pnpm --filter @salvadiux/agent dev\" \"pnpm --filter @salvadiux/api dev\" \"pnpm --filter @salvadiux/dashboard dev\"",
+    "build": "pnpm -r --if-present build",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "lint": "eslint . --max-warnings 0",
+    "test": "vitest run",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/node": "^24.5.2",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.36.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.1",
+    "vitest": "^3.2.4"
+  }
+}

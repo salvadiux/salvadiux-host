@@ -1,0 +1,25 @@
+node_modules/
+dist/
+build/
+.gradle/
+
+# Local Host state: server instances, worlds, player data and backups.
+data/
+*.db
+*.mv.db
+*.sqlite
+*.sqlite3
+
+# Local secrets. Keep sanitized templates in source control.
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+
+# Generated or machine-specific files.
+*.log
+.sites-runtime/
+*.tsbuildinfo
+scripts/migrate-gateway-luckperms.mjs

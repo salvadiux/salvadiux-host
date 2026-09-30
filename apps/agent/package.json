@@ -1,0 +1,1 @@
+{"name":"@salvadiux/agent","version":"0.1.0","type":"module","scripts":{"dev":"node --watch dist/index.js","build":"tsc -p tsconfig.json","typecheck":"tsc --noEmit"},"dependencies":{"@fastify/websocket":"^11.2.0","fastify":"^5.6.1","pidusage":"^4.0.1"},"devDependencies":{"@types/pidusage":"^2.0.5"}}

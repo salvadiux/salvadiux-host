@@ -1,0 +1,78 @@
+network-id: ""
+access-token: ""
+api-url: "http://127.0.0.1:3210"
+mode: "hub"
+realm-id: "default"
+hub-alias: "hub"
+mode-servers:
+  survival: "survival"
+  creative: "creative"
+tracking:
+  interval-seconds: 30
+hub-build-protection:
+  enabled: true
+hub-spawn:
+  enabled: false
+  world: ""
+  x: 0
+  y: 64
+  z: 0
+rank-features:
+  feed: "vip"
+  craft: "vip"
+  enderchest: "ultra"
+  fly: "ultra"
+  kit-cooldown-hours: 24
+# Automatic rank announcements. Edit prices and messages to match your store.
+promotion-bot:
+  enabled: true
+  interval-seconds: 180
+  initial-delay-seconds: 45
+  prefix: "&5✦ &lSCARLL'S UNIVERSE &5✦"
+  store-url: "https://discord.gg/XnJjTqyKDM"
+  prices:
+    vip: "Consulta el precio en Discord"
+    ultra: "Consulta el precio en Discord"
+  messages:
+    - '&fSube a &b&lVIP &fpor &a{vip_price}&f: incluye &e/kit vip, /feed &fy &e/craft&f. Info: &d{store_url}'
+    - '&fEl rango &d&lULTRA &fincluye &e/kit ultra, /ec, /fly &fy ventajas VIP&f. Precio: &a{ultra_price}&f. &d{store_url}'
+    - '&6✦ &fReclama tus kits con &e/kit&f. Los rangos superiores heredan beneficios inferiores.'
+    - '&fExplora los warps disponibles con &e/warp&f; algunos requieren rango VIP o ULTRA.'
+tab-list:
+  enabled: true
+  discord-url: "https://discord.gg/XnJjTqyKDM"
+cosmetics:
+  enabled: true
+  particle-interval-ticks: 10
+  # Players can equip a trail in-game with /cosmeticos. Selections are saved per UUID.
+  players: {}
+# Warps are created in-game with /setwarp <name> [user|vip|ultra|admin|owner].
+warps: {}
+homes:
+  limits:
+    user: 2
+    vip: 5
+    ultra: 10
+    admin: 20
+    owner: -1
+teleport-requests:
+  expiry-seconds: 60
+  cooldown-seconds: 5
+rtp:
+  radius: 5000
+  spawn-safe-radius: 250
+moderation:
+  # Shared, authenticated events are stored by the Host API and replayed by each backend.
+  # Configure server-alias/network-id/access-token on every backend for cross-mode sync.
+  shared-cursor: 0
+  frozen-players: []
+  freeze-block-chat: true
+  report-cooldown-seconds: 30
+  vanished-players: []
+  mutes: {}
+  bans: {}
+  warnings: {}
+  notes: {}
+  reports:
+    next-id: 1
+    items: {}

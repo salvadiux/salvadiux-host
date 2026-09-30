@@ -1,0 +1,25 @@
+name: Proponer una mejora
+description: Propón una función o mejora para Salvadiux Host.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: ¿Qué problema resolvería?
+      description: Cuéntanos quién lo necesita y en qué situación.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solución propuesta
+      description: Describe cómo debería funcionar.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+    validations:
+      required: false

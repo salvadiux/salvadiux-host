@@ -1,0 +1,1 @@
+{"name":"@salvadiux/minecraft","version":"0.1.0","type":"module","exports":"./dist/index.js","scripts":{"typecheck":"tsc --noEmit","build":"tsc -p tsconfig.json"},"dependencies":{"@salvadiux/shared":"workspace:*","tar":"^7.4.3","unzipper":"^0.12.3"},"devDependencies":{"@types/unzipper":"^0.10.11"}}

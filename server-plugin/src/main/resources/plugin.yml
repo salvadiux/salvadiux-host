@@ -1,0 +1,153 @@
+name: SalvadiuxNetworkCore
+version: 0.1.0
+main: net.salvadiux.network.SalvadiuxNetworkCore
+api-version: '1.21'
+description: Hub selection, safe mode routing, and per-mode player locations for Salvadiux networks.
+author: Salvadiux
+softdepend: [zAuth, CoreProtect]
+commands:
+  menu:
+    description: Open the Salvadiux player menu.
+    aliases: [menú]
+  staff:
+    description: Open the staff inspection panel.
+  home:
+    description: Open homes or teleport to a saved home.
+    usage: /home [nombre]
+  sethome:
+    description: Save your current Survival location.
+    usage: /sethome [nombre]
+  homes:
+    description: List your saved homes.
+  delhome:
+    description: Delete a saved home.
+    usage: /delhome <nombre>
+  tpa:
+    description: Request to teleport to another player.
+    usage: /tpa <jugador>
+  tpahere:
+    description: Ask another player to teleport to you.
+    usage: /tpahere <jugador>
+  tpaccept:
+    description: Accept a pending teleport request.
+  tpdeny:
+    description: Deny a pending teleport request.
+  rtp:
+    description: Teleport to a random safe Survival location.
+  report:
+    description: Send a report to the moderation team.
+    usage: /report <jugador> <motivo>
+  reports:
+    description: Review open player reports.
+  freeze:
+    description: Freeze or unfreeze an online player.
+    usage: /freeze <jugador>
+  warn:
+    description: Add a moderation warning to a player.
+    usage: /warn <jugador> <motivo>
+  mute:
+    description: Mute an online player for a duration.
+    usage: /mute <jugador> <duración> <motivo>
+  unmute:
+    description: Remove a player's mute.
+    usage: /unmute <jugador>
+  ban:
+    description: Ban a player across all network backends.
+    usage: /ban <jugador> <duración> <motivo>
+  unban:
+    description: Remove a network-wide ban by player UUID.
+    usage: /unban <uuid>
+  note:
+    description: Save a private staff note for a player.
+    usage: /note <jugador> <nota>
+  notes:
+    description: View staff notes for an online player.
+    usage: /notes <jugador>
+  vanish:
+    description: Toggle staff invisibility.
+  follow:
+    description: Follow or stop following an online player.
+    usage: /follow <jugador|stop>
+  sc:
+    description: Toggle or send a staff-only chat message.
+    aliases: [staffchat]
+  kit:
+    description: Claim your network rank kit in Survival.
+    usage: /kit <rango>
+    aliases: [kits]
+  promo:
+    description: Send a configured rank promotion across the network.
+    usage: /promo [vip|ultra|kits|warps]
+    aliases: [promocion]
+  cosmeticos:
+    description: Open the network cosmetic trails menu.
+    aliases: [cosmetics]
+  modalidades:
+    description: Open the network mode selector in the Hub.
+    aliases: [modos]
+  survival:
+    description: Connect to Survival on this network.
+    permission: salvadiux.network.mode
+  creative:
+    description: Connect to Creative on this network.
+    permission: salvadiux.network.mode
+  hub:
+    description: Return to the network hub.
+    aliases: [lobby]
+    permission: salvadiux.network.hub
+  spawn:
+    description: Return to the current mode's spawn.
+    permission: salvadiux.network.spawn
+  back:
+    description: Return to your previous position in this mode.
+    permission: salvadiux.network.back
+  feed:
+    description: Restore hunger and saturation.
+  ec:
+    description: Open your ender chest.
+    aliases: [enderchest]
+  craft:
+    description: Open a crafting table.
+    aliases: [workbench]
+  fly:
+    description: Toggle flight.
+  warp:
+    description: List available warps or teleport to one.
+  setwarp:
+    description: Create a rank-gated warp.
+    usage: /setwarp <nombre> [rango]
+  delwarp:
+    description: Delete a warp.
+    usage: /delwarp <nombre>
+permissions:
+  salvadiux.staff.helper:
+    description: View reports, inspect inventories read-only, follow players, and use staff chat.
+    default: false
+  salvadiux.staff.moderator:
+    description: Helper tools plus warn, mute, kick, freeze, vanish, and block-history lookup.
+    default: false
+    children:
+      salvadiux.staff.helper: true
+  salvadiux.staff.srmod:
+    description: Moderator tools plus network-wide bans and unbans.
+    default: false
+    children:
+      salvadiux.staff.moderator: true
+  salvadiux.staff.admin:
+    description: Senior moderator tools plus server administration.
+    default: false
+    children:
+      salvadiux.staff.srmod: true
+  salvadiux.staff.owner:
+    description: Full network staff access.
+    default: false
+    children:
+      salvadiux.staff.admin: true
+  salvadiux.network.hub:
+    default: true
+  salvadiux.network.spawn:
+    default: true
+  salvadiux.network.back:
+    default: true
+  salvadiux.network.mode:
+    default: true

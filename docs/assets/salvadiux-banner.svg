@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#090B14"/>
+      <stop offset=".55" stop-color="#111126"/>
+      <stop offset="1" stop-color="#1C1032"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="690" y1="40" x2="1110" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#2DA8FF" stop-opacity=".08"/>
+    </linearGradient>
+    <linearGradient id="logo" x1="64" y1="64" x2="151" y2="151" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B271FF"/>
+      <stop offset="1" stop-color="#6235D8"/>
+    </linearGradient>
+    <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#C4B5FD" fill-opacity=".2"/>
+    </pattern>
+    <filter id="shadow" x="685" y="38" width="472" height="258" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="320" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="28" fill="url(#dots)"/>
+  <ellipse cx="930" cy="165" rx="190" ry="98" fill="url(#glow)" filter="url(#shadow)"/>
+  <circle cx="1070" cy="58" r="2" fill="#DDD6FE" fill-opacity=".8"/>
+  <circle cx="1128" cy="224" r="2" fill="#93C5FD" fill-opacity=".8"/>
+  <circle cx="760" cy="54" r="1.5" fill="#DDD6FE" fill-opacity=".7"/>
+  <rect x="64" y="64" width="88" height="88" rx="25" fill="url(#logo)"/>
+  <path d="M88 86h40v12H100v9h20a9 9 0 0 1 9 9v18H88v-12h29v-5H97a9 9 0 0 1-9-9V86Z" fill="white"/>
+  <text x="64" y="205" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="43" font-weight="700" letter-spacing="-1.5">SALVADIUX HOST</text>
+  <text x="66" y="244" fill="#C4B5FD" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="2.6">MINECRAFT SERVER CONTROL</text>
+  <text x="66" y="279" fill="#A8A8BD" font-family="Segoe UI, Arial, sans-serif" font-size="16">Un panel. Tu mundo. Toda tu network.</text>
+  <g transform="translate(706 78)">
+    <rect width="132" height="152" rx="18" fill="#121521" stroke="#37334F"/>
+    <rect x="15" y="16" width="102" height="35" rx="10" fill="#211936"/>
+    <circle cx="32" cy="33" r="5" fill="#34D399"/>
+    <rect x="45" y="29" width="54" height="7" rx="3.5" fill="#C4B5FD" fill-opacity=".8"/>
+    <rect x="15" y="63" width="102" height="27" rx="8" fill="#181A29"/>
+    <rect x="26" y="73" width="37" height="6" rx="3" fill="#77738E"/>
+    <rect x="15" y="99" width="102" height="38" rx="10" fill="#171927"/>
+    <path d="M28 122h16l8-12 11 16 9-9h31" stroke="#A78BFA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M855 154h45" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="4 6"/>
+  <circle cx="877" cy="154" r="4" fill="#C4B5FD"/>
+  <g transform="translate(914 78)">
+    <rect width="214" height="46" rx="13" fill="#151827" stroke="#39344E"/>
+    <rect x="14" y="12" width="22" height="22" rx="6" fill="#253B4B"/>
+    <path d="M19 18h12v10H19zM21 16v4m8-4v4" stroke="#67E8F9" stroke-width="1.5"/>
+    <text x="48" y="28" fill="#F4F1FF" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600">VELOCITY</text>
+    <circle cx="192" cy="23" r="4" fill="#34D399"/>
+  </g>
+  <path d="M1021 124v24m0 0H960v17m61-17h75v17" stroke="#66528E" stroke-width="2"/>
+  <g transform="translate(914 165)">
+    <rect width="96" height="48" rx="13" fill="#151827" stroke="#39344E"/>
+    <path d="M14 15h18v18H14z" fill="#4A9C58"/><path d="M14 15h18v7H14z" fill="#76C85D"/>
+    <text x="40" y="29" fill="#E9E5F5" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600">HUB</text>
+  </g>
+  <g transform="translate(1026 165)">
+    <rect width="102" height="48" rx="13" fill="#151827" stroke="#39344E"/>
+    <path d="M14 15h18v18H14z" fill="#4A9C58"/><path d="M14 15h18v7H14z" fill="#76C85D"/>
+    <text x="40" y="29" fill="#E9E5F5" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600">SURVIVAL</text>
+  </g>
+  <text x="914" y="250" fill="#9189A8" font-family="Segoe UI, Arial, sans-serif" font-size="12" letter-spacing="1.5">PAPER  ·  PURPUR  ·  VELOCITY</text>
+</svg>
